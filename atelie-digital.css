@@ -39,10 +39,19 @@ section section {
     width: 100%;
 }
 
+ol {
+    justify-content: center;
+}
+
 ul {
     list-style-type: none;
     line-height: 2;
     padding-left: 0;
+}
+
+table {
+    line-height: 1.5;
+    justify-content: center;
 }
 
 a {
@@ -93,6 +102,16 @@ form {
     display: grid;
     justify-content: center;
     border-radius: 12px;
+}
+
+.card-container {
+    background-color: rgb(218, 207, 223);
+    border-radius: 25px;
+    margin-left: 120px;
+    padding: 25px;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 button {
