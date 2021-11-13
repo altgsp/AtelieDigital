@@ -1,4 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
+    width: 100%;
+    height: 100vh;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: auto;
@@ -31,13 +39,14 @@ p.proposta {
 }
 
 section {
-    width: 52%;
+    width: 70%;
     margin: 0 auto;
 }
 
-section section {
+
+/* section section {
     width: 100%;
-}
+} */
 
 ol {
     justify-content: center;
@@ -63,6 +72,7 @@ a {
 .principal {
     background: #eb64a0;
     height: 40px;
+    width: 100%;
     border-radius: 25px;
 }
 
@@ -98,9 +108,17 @@ p.bio1 {
     margin: 0 89px;
 }
 
-form {
-    display: grid;
+.section-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
     justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 12px;
 }
 

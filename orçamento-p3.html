@@ -12,36 +12,59 @@
 
 <body>
 
-    <h1>♥</h1>
+    <h1></h1>
 
     <section class="logotipo">
         <img src="img/Ge.artscript.png" alt="logotipo com um desenho de flores no meio envolto do lome do ateliê">
     </section>
 
+    <header>
+        <section>
+            <!--Area de navegação e acesso à outras partes do site-->
+            <nav class="principal">
+                <!--Está é uma lista não ordenada, devido ao uso do UL-->
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="p2projeto.html">PROJETOS</a>
+                    </li>
+
+                    <li>
+                        <a href="orçamento-p3.html">ORÇAMENTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
     <p class="orçamento">
         <h2>O R Ç A M E N T O</h2>
     </p>
 
-    <!--Form para selecionar o método de envio desses daddos-->
-    <section class="section-container background-section-two">
-        <div class="card-container">
-            <div>
-                <div id="content">
-                    <form id="form">
-                        <fieldset>
-                            <legend>
-                                Dados para o orçamento:
-                            </legend>
-                            <p>
-                                <label for="nome">
+    <center>
+        <!--Form para selecionar o método de envio desses daddos-->
+        <section class="section-container background-section-two">
+            <div class="card-container">
+                <div>
+                    <div id="content">
+                        <form id="form">
+                            <fieldset>
+                                <legend>
+                                    Dados para o orçamento:
+                                </legend>
+                                <p>
+                                    <label for="nome">
                                     Nome:
                                 </label>
-                                <p>
-                                    <input type="text" id="nome" placeholder="Nome completo" </p>
-                                    <P>
-                                        <span>Selecione aqui</span>
-                                        <label for="tipoarte">Tipo de arte:</label>
-                                        <select id="tipoarte" name="tipoarte">
+                                    <p>
+                                        <input type="text" id="nome" placeholder="Nome completo" </p>
+                                        <P>
+                                            <span>Selecione aqui</span>
+                                            <label for="tipoarte">Tipo de arte:</label>
+                                            <select id="tipoarte" name="tipoarte">
                                     <option> Selecione o tipo de arte </option>
                                     <option value="MURAL"> MURAL </option>
                                     <option value="DESENHO"> DESENHO P&B</option>
@@ -51,75 +74,84 @@
                                     <option value="REALISMO"> REALISMO </option>
                                     <option value="COLAGEM"> COLAGEM </option>
                                 </select>
-                                    </P>
+                                        </P>
 
-                                    <p>
-                                        <label for="email">
+                                        <p>
+                                            <label for="email">
                                     e-mail:
                                 </label>
-                                        <input type="email" id="email" placeholder="Digite aqui o seu e-mail" </p>
+                                            <input type="email" id="email" placeholder="Digite aqui o seu e-mail" </p>
 
-                                        <fieldset>
-                                            <label for="mensagem">
+                                            <fieldset>
+                                                <label for="mensagem">
                                     Informe maiores detalhes:
                                 </label>
 
-                                            <textarea id="mensagem" placeholder="Descreva detalhadamente a sua ideia!"> </textarea>
-                                            <fieldset>
-                                                <label for="dataorçamento">
+                                                <textarea id="mensagem" placeholder="Descreva detalhadamente a sua ideia!"> </textarea>
+                                                <fieldset>
+                                                    <label for="dataorçamento">
                                         Data limite para recebimento do orçamento:
                                         <input type="date" name="dataorçamento"
                                             placeholder="Selecione a data limite para recebimento do orçamento (considerando o prazo minimo de 48h)">
                                     </label>
+                                                </fieldset>
                                             </fieldset>
-                                        </fieldset>
 
-                                        <p class="termos">
+                                            <p class="termos">
 
-                                            <br>
-                                            <radio>
-                                                <p>
-                                                    <label for="TermosdeUso">
+                                                <br>
+                                                <radio>
+                                                    <p>
+                                                        <label for="TermosdeUso">
                                             Termos de uso das artes:
                                         </label>
+                                                        <p>
+                                                            <input type="radio" id="DireitosAutorais" name="DireitosAutorais" value="1"> Confirma estar ciente dos termos da Lei de Direitos Autorais e não fornecer as artes ou reproduzir por conta própria
+                                                            sob pena do Crime de Plágio?
+                                                        </p>
+                                                </radio>
+                                                </p>
+                                                <p>
+
                                                     <p>
-                                                        <input type="radio" id="DireitosAutorais" name="DireitosAutorais" value="1"> Confirma estar ciente dos termos da Lei de Direitos Autorais e não fornecer as artes ou reproduzir por conta própria sob
-                                                        pena do Crime de Plágio?
+                                                        <button type="reset">Limpar</button>
                                                     </p>
-                                            </radio>
-                                            </p>
-                                            <p>
 
-                                                <p>
-                                                    <button type="reset">Limpar</button>
+                                                    <p>
+                                                        <button type="submit">Enviar</button>
+                                                    </p>
                                                 </p>
 
                                                 <p>
-                                                    <button type="submit">Enviar</button>
-                                                </p>
-                                            </p>
-
-                                            <p>
-                                                <fieldset>
-                                                    <legend><b>Deseja receber e-mails com atualizaçoes sobre artes novas?</b></legend>
-                                                    <input type="checkbox" name="opcoes">Sim!
-                                                    <input type="checkbox" name="opcoes"> Não
-                                                    <input type="checkbox" name="opcoes">Sim, mas com menos frequência.
                                                     <fieldset>
-                                                        <form id="form">
-                                                            <p>
-                                                                <input type="text" placeholder="email" id="email">
-                                                            </p>
-                                                            <input type="submit" value="Cadastrar">
-                                                        </form>
+                                                        <legend><b>Deseja receber e-mails com atualizaçoes sobre artes novas?</b></legend>
+                                                        <input type="checkbox" name="opcoes">Sim!
+                                                        <input type="checkbox" name="opcoes"> Não
+                                                        <input type="checkbox" name="opcoes">Sim, mas com menos frequência.
+                                                        <fieldset>
+                                                            <form id="form">
+                                                                <p>
+                                                                    <input type="text" placeholder="email" id="email">
+                                                                </p>
+                                                                <input type="submit" value="Cadastrar">
+                                                            </form>
+                                                        </fieldset>
                                                     </fieldset>
-                                                </fieldset>
 
-                                            </p>
-                        </fieldset>
+                                                </p>
+                            </fieldset>
+                    </div>
                 </div>
-            </div>
-    </section>
+        </section>
+    </center>
+
+    <center>
+        <button id="botao">Clique-me</button>
+        <button id="cancelar">Cancelar evento</button>
+    </center>
+
+    </br>
+    </br>
 
     <!--Footer com imagem da logo e informaços básicas-->
     <footer>
@@ -130,5 +162,6 @@
                     Santos</a></b> . 👾 . - Todos os direitos reservados.</p>
     </footer>
 </body>
+<script src="js/javascript.js"></script>
 
 </html>
